@@ -12,6 +12,16 @@ pipenv install
 pipenv run pre-commit install # install pre-commits
 ```
 
+### Running linters
+
+```zsh
+pipenv run black ./
+pipenv run flake8 ./
+pipenv run isort ./
+# Run all at same time
+pipenv run black ./ && pipenv run flake8 ./ && pipenv run isort ./
+```
+
 ### Main libs list
 
 - [fastapi](https://github.com/tiangolo/fastapi) - web framework
